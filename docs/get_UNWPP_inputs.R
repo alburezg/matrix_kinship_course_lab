@@ -11,7 +11,7 @@ get_UNWPP_inputs <- function(countries, my_startyr, my_endyr, sex = "Female", va
   target <- paste0(base_url,'/indicators/?format=csv')
   codes <- read.csv(target, sep='|', skip=1) 
   
-  qx_code <- codes$Id[codes$ShortName == "qx1"]
+  qx_code <- codes$Id[codes$ShortName == "qx1"] #comment
   asfr_code <- codes$Id[codes$ShortName == "ASFR1"]
   
   # Get location codes
